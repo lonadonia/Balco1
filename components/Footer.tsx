@@ -6,33 +6,44 @@ export const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-slate-950 py-12 border-t border-slate-800">
-      <motion.div 
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.8 }}
-        className="container mx-auto px-4 md:px-6"
-      >
-        <div className="flex flex-col md:flex-row justify-between items-center gap-6">
-          <div className="flex flex-col items-center md:items-start">
-            <Logo className="h-8 mb-4" />
-            <p className="text-slate-500 text-sm max-w-xs text-center md:text-left">
-              Engineered safety solutions for the UK's leading sports environments. Trusted by schools, councils, and private facilities.
+    <footer className="bg-slate-950 pt-20 pb-10 border-t border-slate-900">
+      <div className="container mx-auto px-6 md:px-12">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+          <div className="md:col-span-2">
+            <Logo className="h-10 mb-6" />
+            <p className="text-slate-500 text-sm leading-relaxed max-w-sm">
+              Balco Global leads the UK market in high-performance safety padding. 
+              We combine advanced materials with expert craftsmanship to create safer 
+              environments for athletes and students nationwide.
             </p>
           </div>
           
-          <div className="flex gap-6 text-sm text-slate-400">
-            <a href="#" className="hover:text-brand-accent transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-brand-accent transition-colors">Terms of Service</a>
-            <a href="#" className="hover:text-brand-accent transition-colors">Cookies</a>
+          <div>
+            <h4 className="text-white font-bold mb-6">Quick Links</h4>
+            <ul className="space-y-4 text-sm text-slate-400">
+              <li><a href="#" className="hover:text-brand-accent transition-colors">About Us</a></li>
+              <li><a href="#" className="hover:text-brand-accent transition-colors">Products</a></li>
+              <li><a href="#" className="hover:text-brand-accent transition-colors">Case Studies</a></li>
+              <li><a href="#enquire" className="hover:text-brand-accent transition-colors">Contact</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="text-white font-bold mb-6">Legal</h4>
+            <ul className="space-y-4 text-sm text-slate-400">
+              <li><a href="#" className="hover:text-brand-accent transition-colors">Privacy Policy</a></li>
+              <li><a href="#" className="hover:text-brand-accent transition-colors">Terms & Conditions</a></li>
+              <li><a href="#" className="hover:text-brand-accent transition-colors">Cookie Policy</a></li>
+              <li><a href="#" className="hover:text-brand-accent transition-colors">Accessibility</a></li>
+            </ul>
           </div>
         </div>
         
-        <div className="mt-8 pt-8 border-t border-slate-900 text-center text-xs text-slate-600">
+        <div className="pt-8 border-t border-slate-900 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-600">
           <p>&copy; {currentYear} Balco Global Ltd. All rights reserved.</p>
+          <p>Designed and Manufactured in the UK 🇬🇧</p>
         </div>
-      </motion.div>
+      </div>
     </footer>
   );
 };
