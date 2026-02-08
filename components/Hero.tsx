@@ -138,14 +138,14 @@ export const Hero: React.FC = () => {
               <span className="text-brand-cyan text-xs font-bold tracking-[0.2em] uppercase">UK Manufacturer</span>
             </motion.div>
             
-            <motion.h1 variants={itemVariants} className="text-5xl md:text-7xl lg:text-8xl font-black text-white leading-[1.1] tracking-tight mb-8 drop-shadow-2xl">
+            <motion.h1 variants={itemVariants} className="text-4xl md:text-6xl lg:text-7xl font-black text-white leading-[1.1] tracking-tight mb-8 drop-shadow-2xl">
               SAFER SPACES FOR <br/>
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-accent via-green-400 to-brand-accent animate-gradient-x bg-[length:200%_auto]">
                 HIGH-IMPACT SPORTS
               </span>
             </motion.h1>
             
-            <motion.p variants={itemVariants} className="text-lg md:text-2xl text-slate-300 max-w-3xl mx-auto leading-relaxed mb-12 font-light drop-shadow-md">
+            <motion.p variants={itemVariants} className="text-base md:text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed mb-12 font-light drop-shadow-md">
               Premium, UK-made wall padding engineered for <span className="text-white font-semibold">safety</span> and <span className="text-white font-semibold">performance</span> in sports halls, arenas, and schools.
             </motion.p>
             
