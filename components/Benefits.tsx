@@ -2,6 +2,7 @@ import React from 'react';
 import { BENEFITS } from '../constants';
 import { Shield, Hammer, MapPin, School, LucideIcon } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { GeometricPattern } from './GeometricPattern';
 
 const iconMap: Record<string, LucideIcon> = {
   Shield,
@@ -26,15 +27,7 @@ export const Benefits: React.FC = () => {
   return (
     <section className="py-20 bg-slate-800 border-t border-slate-700 border-b relative overflow-hidden">
       {/* Decorative Top Shape - Framing the header from Top Right */}
-      <motion.img 
-        initial={{ opacity: 0, x: 50, rotate: -5 }}
-        whileInView={{ opacity: 0.15, x: 0, rotate: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 1.2 }}
-        src="https://i.ibb.co/VYKBdJvx/imgi-18-case-study-shape-top.png" 
-        alt="" 
-        className="absolute top-[-20%] right-[-10%] w-[90%] md:w-[60%] pointer-events-none select-none z-0"
-      />
+      <GeometricPattern className="absolute top-[-30%] right-[-10%] w-[60%] h-[150%] text-brand-teal opacity-30 rotate-12" />
 
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         <motion.div 

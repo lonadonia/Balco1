@@ -3,6 +3,7 @@ import { useForm, SubmitHandler } from 'react-hook-form';
 import { ContactFormData } from '../types';
 import { CheckCircle, AlertCircle, Loader2 } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { GeometricPattern } from './GeometricPattern';
 
 export const ContactForm: React.FC = () => {
   const { register, handleSubmit, reset, formState: { errors } } = useForm<ContactFormData>();
@@ -38,11 +39,7 @@ export const ContactForm: React.FC = () => {
   return (
     <section id="enquire" className="py-24 bg-gradient-to-b from-slate-900 to-brand-teal relative overflow-hidden">
       {/* Background decoration - Top Shape reused at Top Left for Balance */}
-      <img 
-        src="https://i.ibb.co/VYKBdJvx/imgi-18-case-study-shape-top.png" 
-        alt="" 
-        className="absolute top-[-10%] left-[-10%] w-[80%] md:w-[50%] opacity-10 pointer-events-none select-none z-0 rotate-180"
-      />
+      <GeometricPattern className="absolute top-[-30%] left-[-20%] w-[70%] h-[150%] text-brand-teal opacity-30 rotate-180" flipped />
       
       {/* Existing skew decoration */}
       <div className="absolute top-0 right-0 w-1/3 h-full bg-brand-accent/5 skew-x-12 pointer-events-none" />
